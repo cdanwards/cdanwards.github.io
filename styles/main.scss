@@ -324,23 +324,24 @@ body {
     @include span-columns(12);
 
     #wrap {
-      @include span-columns(4);
+      @include span-columns(6);
       width: 100%;
     }
     #wrap a {
+      @include span-columns(2);
       display: inline-block;
       margin: 0 auto;
       border-radius: 120px;
       background-color: #fff;
       width: 120px;
       height: 120px;
-      text-align: center;
       color: #402613;
 
     }
     a .fa {
+      display: inline-block;
       margin: auto;
-      width: 100%;
+      width: 25%;
       height: 100%;
       line-height: 120px;
       font-size: 75px;

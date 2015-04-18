@@ -315,22 +315,28 @@ body {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%;
+    width: 48.82117%;
     width: 100%; }
     .contact .icons-container #wrap:last-child {
       margin-right: 0; }
   .contact .icons-container #wrap a {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
     display: inline-block;
     margin: 0 auto;
     border-radius: 120px;
     background-color: #fff;
     width: 120px;
     height: 120px;
-    text-align: center;
     color: #402613; }
+    .contact .icons-container #wrap a:last-child {
+      margin-right: 0; }
   .contact .icons-container a .fa {
+    display: inline-block;
     margin: auto;
-    width: 100%;
+    width: 25%;
     height: 100%;
     line-height: 120px;
     font-size: 75px; }
