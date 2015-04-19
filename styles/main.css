@@ -226,7 +226,8 @@ body {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 40.29137%;
+      width: 31.76157%;
+      margin-left: 8.5298%;
       position: relative;
       margin-bottom: 50px; }
       .work .work-container .work-list .project:last-child {
@@ -294,51 +295,53 @@ body {
         margin-left: 10%; }
 
 /* Contact Section */
-.contact .icons-container {
-  height: 200px;
-  width: 50%;
-  text-align: center;
-  max-width: 80.5em;
-  margin-left: auto;
-  margin-right: auto;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  .contact .icons-container::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .contact .icons-container:last-child {
-    margin-right: 0; }
-  .contact .icons-container #wrap {
+.contact {
+  height: 200px; }
+  .contact .info-container {
+    width: 40%;
     float: left;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 100; }
+  .contact .contact-info {
     display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
-    width: 100%; }
-    .contact .icons-container #wrap:last-child {
-      margin-right: 0; }
-  .contact .icons-container #wrap a {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 14.70196%;
-    display: inline-block;
-    margin: 0 auto;
-    border-radius: 120px;
-    background-color: #fff;
-    width: 120px;
-    height: 120px;
-    color: #402613; }
-    .contact .icons-container #wrap a:last-child {
-      margin-right: 0; }
-  .contact .icons-container a .fa {
-    display: inline-block;
-    margin: auto;
-    width: 25%;
-    height: 100%;
-    line-height: 120px;
-    font-size: 75px; }
+    margin-bottom: 12px; }
+  .contact .icons-container {
+    width: 60%;
+    text-align: center;
+    float: right; }
+    .contact .icons-container .wrap {
+      float: right; }
+    .contact .icons-container .wrap a {
+      display: inline-block;
+      margin: 0 auto;
+      border-radius: 120px;
+      width: 105px;
+      height: 105px;
+      background-color: RGBA(0, 173, 191, 1);
+      color: white;
+      text-align: center; }
+    .contact .icons-container a .fa {
+      display: inline-block;
+      margin: auto;
+      height: 100%;
+      line-height: 105px;
+      font-size: 75px;
+      text-align: center; }
+    .contact .icons-container .wrap a:hover {
+      background-color: #ECEFF1;
+      color: RGBA(0, 173, 191, 1); }
+
+/* Footer */
+footer {
+  margin: 20px auto; }
+
+.footer-container {
+  margin: 20px auto;
+  width: 75%;
+  border-top: 2px solid RGBA(0, 173, 191, 1); }
+  .footer-container h2 {
+    margin: 10px 0;
+    font-weight: 100; }
 
 /*# sourceMappingURL=main.css.map */

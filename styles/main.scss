@@ -233,7 +233,8 @@ body {
       @include span-columns(12);
       margin-bottom: 40px;
       .project {
-        @include span-columns(5);
+        @include span-columns(4);
+        @include shift(1);
         position: relative;
         margin-bottom: 50px;
         .image-container {
@@ -314,37 +315,67 @@ body {
 
 
 .contact {
+  height: 200px;
+  .info-container {
+    width: 40%;
+    float: left;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 100;
 
-
+  }
+  .contact-info {
+    display: block;
+    margin-bottom: 12px;
+  }
   .icons-container {
-    height: 200px;
-    width: 50%;
+    width: 60%;
     text-align: center;
-    @include outer-container;
-    @include span-columns(12);
+    float: right;
 
-    #wrap {
-      @include span-columns(6);
-      width: 100%;
+    .wrap {
+
+      float: right;
     }
-    #wrap a {
-      @include span-columns(2);
+    .wrap a {
+
       display: inline-block;
       margin: 0 auto;
       border-radius: 120px;
-      background-color: #fff;
-      width: 120px;
-      height: 120px;
-      color: #402613;
-
+      width: 105px;
+      height: 105px;
+      background-color: $font-accent;
+      color: white;
+      text-align: center;
     }
     a .fa {
       display: inline-block;
       margin: auto;
-      width: 25%;
       height: 100%;
-      line-height: 120px;
+      line-height: 105px;
       font-size: 75px;
+      text-align: center;
     }
+    .wrap a:hover {
+      background-color: $background-color;
+      color: $font-accent;
+    }
+  }
+}
+
+/* Footer */
+
+footer {
+  margin: 20px auto;
+}
+
+.footer-container {
+  margin: 20px auto;
+  width: 75%;
+  border-top: 2px solid $font-accent;
+
+  h2 {
+    margin: 10px 0;
+    font-weight: 100;
   }
 }
