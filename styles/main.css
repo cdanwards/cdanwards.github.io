@@ -53,6 +53,9 @@ body {
     color: white; }
   .nav a:hover {
     color: RGBA(0, 173, 191, 1); }
+  @media screen and (max-width: 500px) {
+    .nav {
+      width: 100%; } }
 
 /* Sections */
 .section {
@@ -63,7 +66,7 @@ body {
 /* Heading */
 .home {
   color: white;
-  background: linear-gradient(rgba(189, 189, 189, 0.5), rgba(189, 189, 189, 0.5)), url("https://download.unsplash.com/42/PcLGXNjMTdiFVKTrElCl__DSC2245.jpg");
+  background: linear-gradient(rgba(189, 189, 189, 0.5), rgba(189, 189, 189, 0.5)), url(../images/table.jpg);
   background-size: cover;
   max-width: 100%;
   height: 580px;
@@ -77,6 +80,12 @@ body {
   .home h3 {
     font-weight: 100;
     font-size: 30px; }
+  .home a {
+    text-decoration: none;
+    color: white; }
+  @media screen and (max-width: 500px) {
+    .home .headings {
+      padding-top: 100px; } }
 
 /* arrow */
 .arrow-wrap {
@@ -163,6 +172,12 @@ body {
   font-weight: 300;
   color: #00ADBF;
   margin-bottom: 20px; }
+  @media screen and (max-width: 840px) {
+    .section-heading {
+      text-align: center; } }
+  @media screen and (max-width: 500px) {
+    .section-heading {
+      text-align: center; } }
 
 /* About Section */
 .about {
@@ -207,6 +222,54 @@ body {
       font-weight: 300; }
       .about .about-text .about-paragraph:last-child {
         margin-right: 0; }
+  @media screen and (max-width: 840px) {
+    .about .about-text {
+      max-width: 80.5em;
+      margin-left: auto;
+      margin-right: auto;
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 100%; }
+      .about .about-text::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .about .about-text:last-child {
+        margin-right: 0; }
+      .about .about-text .prof-pic {
+        display: none; }
+      .about .about-text .about-paragraph {
+        float: left;
+        display: block;
+        margin-right: 3.57866%;
+        width: 100%; }
+        .about .about-text .about-paragraph:last-child {
+          margin-right: 0; } }
+  @media screen and (max-width: 500px) {
+    .about .about-text {
+      max-width: 80.5em;
+      margin-left: auto;
+      margin-right: auto;
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%; }
+      .about .about-text::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .about .about-text:last-child {
+        margin-right: 0; }
+      .about .about-text .prof-pic {
+        display: none; }
+      .about .about-text .about-paragraph {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 100%; }
+        .about .about-text .about-paragraph:last-child {
+          margin-right: 0; } }
 
 /* Work Section */
 .work .work-container {
@@ -269,7 +332,8 @@ body {
         font-size: 26px;
         text-align: center;
         margin: 0 auto;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        font-weight: 300; }
       .work .work-container .work-list .project a {
         text-decoration: none;
         display: inline-block;
@@ -298,6 +362,24 @@ body {
           opacity: 1; }
       .work .work-container .work-list .project .live-button {
         float: right; }
+      @media screen and (max-width: 840px) {
+        .work .work-container .work-list .project {
+          width: 100%;
+          margin: 0 auto; }
+          .work .work-container .work-list .project h3 {
+            font-size: 35px; }
+          .work .work-container .work-list .project a {
+            font-size: 35px;
+            height: 50px; } }
+      @media screen and (max-width: 500px) {
+        .work .work-container .work-list .project {
+          width: 100%;
+          margin: 0 auto; }
+          .work .work-container .work-list .project h3 {
+            font-size: 35px; }
+          .work .work-container .work-list .project a {
+            height: 50px;
+            font-size: 35px; } }
 
 /* Contact Section */
 .contact {
@@ -336,6 +418,28 @@ body {
     .contact .icons-container .wrap a:hover {
       background-color: #ECEFF1;
       color: RGBA(0, 173, 191, 1); }
+  @media screen and (max-width: 840px) {
+    .contact {
+      height: 220px; }
+      .contact .info-container {
+        width: 100%;
+        text-align: center; }
+      .contact .icons-container {
+        width: 100%; }
+        .contact .icons-container .wrap {
+          float: center;
+          text-align: center; } }
+  @media screen and (max-width: 500px) {
+    .contact {
+      height: 220px; }
+      .contact .info-container {
+        width: 100%;
+        text-align: center; }
+      .contact .icons-container {
+        width: 100%; }
+        .contact .icons-container .wrap {
+          float: center;
+          text-align: center; } }
 
 /* Footer */
 footer {
@@ -350,5 +454,12 @@ footer {
     font-weight: 100; }
   .footer-container .fa {
     font-size: .9em; }
+  @media screen and (max-width: 500px) {
+    .footer-container {
+      font-size: .7em;
+      text-align: center; } }
+  @media screen and (max-width: 840px) {
+    .footer-container {
+      text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -76,6 +76,9 @@ body {
   a:hover {
     color: $font-accent;
   }
+  @include media($mobile) {
+    width: 100%;
+  }
 }
 
 
@@ -91,7 +94,7 @@ body {
 
 .home {
   color: white;
-  background: linear-gradient(rgba(189, 189, 189, .5), rgba(189, 189, 189, .5)), url('https://download.unsplash.com/42/PcLGXNjMTdiFVKTrElCl__DSC2245.jpg');
+  background: linear-gradient(rgba(189, 189, 189, .5), rgba(189, 189, 189, .5)), url(../images/table.jpg);
   background-size: cover;
   max-width: 100%;
   height: 580px;
@@ -107,6 +110,15 @@ body {
   h3 {
     font-weight: 100;
     font-size: 30px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  @include media($mobile) {
+    .headings {
+      padding-top: 100px;
+    }
   }
 }
 
@@ -197,6 +209,12 @@ body {
   font-weight: 300;
   color: #00ADBF;
   margin-bottom: 20px;
+  @include media($tablet) {
+    text-align: center;
+  }
+  @include media($mobile) {
+    text-align: center;
+  }
 }
 
 /* About Section */
@@ -226,6 +244,30 @@ body {
       font-size: 24px;
       font-weight: 300;
     }
+  }
+  @include media($tablet) {
+    .about-text {
+      @include outer-container;
+      @include span-columns(8);
+      .prof-pic {
+        display: none;
+      }
+      .about-paragraph {
+        @include span-columns(8);
+      }
+    }
+  }
+  @include media($mobile) {
+  .about-text {
+    @include outer-container;
+    @include span-columns(4);
+    .prof-pic {
+      display: none;
+    }
+    .about-paragraph {
+      @include span-columns(4);
+    }
+  }
   }
 }
 
@@ -281,6 +323,7 @@ body {
           text-align: center;
           margin: 0 auto;
           margin-bottom: 10px;
+          font-weight: 300;
         }
         a {
           text-decoration: none;
@@ -312,6 +355,28 @@ body {
         }
         .live-button {
           float: right;
+        }
+        @include media($tablet) {
+          width: 100%;
+          margin: 0 auto;
+          h3 {
+            font-size: 35px;
+          }
+          a {
+            font-size: 35px;
+            height: 50px;
+          }
+        }
+        @include media($mobile) {
+          width: 100%;
+          margin: 0 auto;
+          h3 {
+            font-size: 35px;
+          }
+          a {
+            height: 50px;
+            font-size: 35px;
+          }
         }
       }
     }
@@ -368,6 +433,34 @@ body {
       color: $font-accent;
     }
   }
+  @include media($tablet) {
+    .info-container {
+      width: 100%;
+      text-align: center;
+    }
+    .icons-container {
+      width: 100%;
+      .wrap {
+        float: center;
+        text-align: center;
+      }
+    }
+    height: 220px;
+  }
+  @include media($mobile) {
+    .info-container {
+      width: 100%;
+      text-align: center;
+    }
+    .icons-container {
+      width: 100%;
+      .wrap {
+        float: center;
+        text-align: center;
+      }
+    }
+    height: 220px;
+  }
 }
 
 /* Footer */
@@ -388,5 +481,12 @@ footer {
 
   .fa {
     font-size: .9em;
+  }
+  @include media($mobile) {
+    font-size: .7em;
+    text-align: center;
+  }
+  @include media($tablet) {
+    text-align: center;
   }
 }
