@@ -62,12 +62,18 @@ body {
     color: RGBA(0, 173, 191, 1);
     font-weight: 100;
   }
+  .link {
+    color: white;
+  }
   .active {
     border: 2px solid white;
     border-radius: 3px;
   }
   a {
     text-decoration: none;
+    color: white;
+  }
+  a:hover {
     color: $font-accent;
   }
 }
@@ -85,7 +91,7 @@ body {
 
 .home {
   color: white;
-  background: linear-gradient(rgba(189, 189, 189, .1), rgba(189, 189, 189, .1)), url(../images/stars.jpeg);
+  background: linear-gradient(rgba(189, 189, 189, .5), rgba(189, 189, 189, .5)), url('https://download.unsplash.com/42/PcLGXNjMTdiFVKTrElCl__DSC2245.jpg');
   background-size: cover;
   max-width: 100%;
   height: 580px;
@@ -276,15 +282,16 @@ body {
           margin: 0 auto;
           margin-bottom: 10px;
         }
-        button {
+        a {
+          text-decoration: none;
           display: inline-block;
           text-align: center;
-          margin: 0 auto;
+          vertical-align: middle;
           height: 30px;
           padding-bottom: none;
           width: 45%;
           text-align: center;
-          font-size: 16px;
+          font-size: 22px;
           font-weight: 300;
           background-color: $font-accent;
           color: white;
@@ -304,7 +311,7 @@ body {
           }
         }
         .live-button {
-          margin-left: 9%
+          float: right;
         }
       }
     }
@@ -377,5 +384,9 @@ footer {
   h2 {
     margin: 10px 0;
     font-weight: 100;
+  }
+
+  .fa {
+    font-size: .9em;
   }
 }
