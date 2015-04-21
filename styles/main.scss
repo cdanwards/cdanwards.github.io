@@ -78,6 +78,7 @@ body {
   }
   @include media($mobile) {
     width: 100%;
+    font-size: .5em;
   }
 }
 
@@ -118,6 +119,9 @@ body {
   @include media($mobile) {
     .headings {
       padding-top: 100px;
+    }
+    h3 {
+      font-size: 25px;
     }
   }
 }
@@ -283,6 +287,13 @@ body {
     .skill-icon {
       width: 9%;
       vertical-align: middle;
+    }
+  }
+  @include media($mobile) {
+    .skills-container {
+      .skill-icon {
+        width: 18%;
+      }
     }
   }
 }
@@ -456,6 +467,7 @@ body {
     .info-container {
       width: 100%;
       text-align: center;
+      font-size: 24px;
     }
     .icons-container {
       width: 100%;
@@ -476,6 +488,13 @@ body {
       .wrap {
         float: center;
         text-align: center;
+      }
+      .wrap a {
+        width: 42px;
+        height: 42px;
+      }
+      a .fa {
+        line-height: 40px;
       }
     }
     height: 220px;
