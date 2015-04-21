@@ -271,6 +271,21 @@ body {
   }
 }
 
+
+/* Skills Section */
+
+.skills {
+  .skills-container {
+    width: 100%;
+    margin-bottom: 40px;
+    display: inline-block;
+    text-align: center;
+    .skill-icon {
+      width: 9%;
+      vertical-align: middle;
+    }
+  }
+}
 /* Work Section */
 
 .work {

@@ -271,6 +271,16 @@ body {
         .about .about-text .about-paragraph:last-child {
           margin-right: 0; } }
 
+/* Skills Section */
+.skills .skills-container {
+  width: 100%;
+  margin-bottom: 40px;
+  display: inline-block;
+  text-align: center; }
+  .skills .skills-container .skill-icon {
+    width: 9%;
+    vertical-align: middle; }
+
 /* Work Section */
 .work .work-container {
   max-width: 100%;
