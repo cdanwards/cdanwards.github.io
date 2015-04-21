@@ -66,7 +66,7 @@ body {
 /* Heading */
 .home {
   color: white;
-  background: linear-gradient(rgba(189, 189, 189, 0.5), rgba(189, 189, 189, 0.5)), url(../images/table.jpg);
+  background: linear-gradient(rgba(189, 189, 189, 0.7), rgba(189, 189, 189, 0.7)), url(../images/table.jpg);
   background-size: cover;
   max-width: 100%;
   height: 580px;
@@ -382,6 +382,10 @@ body {
             font-size: 35px; } }
 
 /* Contact Section */
+.info-link {
+  text-decoration: none;
+  color: black; }
+
 .contact {
   height: 200px; }
   .contact .info-container {
@@ -389,7 +393,9 @@ body {
     float: left;
     text-align: left;
     font-size: 32px;
-    font-weight: 100; }
+    font-weight: 100;
+    text-decoration: none;
+    color: black; }
   .contact .contact-info {
     display: block;
     margin-bottom: 12px; }
