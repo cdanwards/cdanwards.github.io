@@ -52,6 +52,7 @@ body {
   padding-top: 5px;
   padding-left: 5px;
   color: $font-accent;
+  font-size: 17px;
   li {
     list-style: none;
     display: inline-block;
@@ -79,6 +80,7 @@ body {
   @include media($mobile) {
     width: 100%;
     font-size: .5em;
+    text-align: center;
   }
 }
 
@@ -106,11 +108,11 @@ body {
   }
   h1{
     font-weight: 100;
-    font-size: 80px;
+    font-size: 75px;
   }
   h3 {
     font-weight: 100;
-    font-size: 30px;
+    font-size: 32px;
   }
   a {
     text-decoration: none;
@@ -270,6 +272,7 @@ body {
     }
     .about-paragraph {
       @include span-columns(4);
+      text-align: center;
     }
   }
   }
@@ -285,14 +288,14 @@ body {
     display: inline-block;
     text-align: center;
     .skill-icon {
-      width: 9%;
+      width: 14%;
       vertical-align: middle;
     }
   }
   @include media($mobile) {
     .skills-container {
       .skill-icon {
-        width: 18%;
+        width: 28%;
         margin-bottom: 4px;
       }
     }
