@@ -273,7 +273,8 @@ body {
         display: block;
         margin-right: 7.42297%;
         width: 100%;
-        text-align: center; }
+        text-align: center;
+        padding-bottom: 20px; }
         .about .about-text .about-paragraph:last-child {
           margin-right: 0; } }
 

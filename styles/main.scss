@@ -273,6 +273,7 @@ body {
     .about-paragraph {
       @include span-columns(4);
       text-align: center;
+      padding-bottom: 20px;
     }
   }
   }
